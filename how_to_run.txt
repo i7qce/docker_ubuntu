@@ -1,0 +1,24 @@
+First, go to this directory
+
+Then, run
+
+docker build -t <image name> .
+
+This will build the image
+
+Then, to run it use
+
+docker run -it -v <volume name>:<path to mount> <image name>
+
+
+usually, <volume name> is v1 and <path to mount> is /home/u1/docs
+
+e.g. 
+
+docker run -it -v v1:/home/u1/docs dev_img
+
+
+note:
+
+For vscode, add default extensions to Code > Preferences > Settings > Extensions > Remote - Containers > Default Extensions
+this ensures that, e.g. the jupyter extensions required to render notebooks are always installed when starting a new container and don't require manually reinstalling.
