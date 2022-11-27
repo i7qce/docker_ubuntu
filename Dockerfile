@@ -35,10 +35,12 @@ RUN apt-get install -y tmux
 RUN apt-get install -y git
 RUN apt-get install -y curl
 
+RUN apt-get install -y php
+
 RUN apt-get install -y libopencv-dev
 RUN apt-get install -y python3-pip
 
-RUN pip install numpy scipy matplotlib jupyterlab pandas scikit-learn opencv-python ipympl pillow jupyter
+RUN pip install numpy scipy matplotlib jupyterlab pandas scikit-learn opencv-python ipympl pillow jupyter tqdm pytest
 
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
