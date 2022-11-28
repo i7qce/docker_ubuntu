@@ -41,7 +41,11 @@ RUN apt-get install -y libopencv-dev
 RUN apt-get install -y python3-pip
 
 RUN pip install numpy scipy matplotlib jupyterlab pandas scikit-learn opencv-python ipympl pillow jupyter tqdm pytest
+RUN pip install flask sqlalchemy flask-sqlalchemy flask-cors markdown lorem pymdown-extensions pygments mkdocs
 
+RUN apt-get install -y sqlite3
+
+RUN apt-get install -y pandoc
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
