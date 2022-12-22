@@ -34,6 +34,7 @@ RUN apt-get install -y vim
 RUN apt-get install -y tmux
 RUN apt-get install -y git
 RUN apt-get install -y curl
+RUN apt-get install -y lilypond
 
 RUN apt-get install -y php
 
@@ -42,6 +43,7 @@ RUN apt-get install -y python3-pip
 
 RUN pip install numpy scipy matplotlib jupyterlab pandas scikit-learn opencv-python ipympl pillow jupyter tqdm pytest
 RUN pip install flask sqlalchemy flask-sqlalchemy flask-cors markdown lorem pymdown-extensions pygments mkdocs
+RUN pip install music21
 
 RUN apt-get install -y sqlite3
 
